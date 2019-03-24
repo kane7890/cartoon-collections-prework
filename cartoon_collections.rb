@@ -29,4 +29,5 @@ def find_the_cheese(ing_array)
       chzflag = ing 
       
     end }
+    return (chzflag)
 end
