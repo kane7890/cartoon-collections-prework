@@ -19,7 +19,10 @@ def long_planeteer_calls(call_array)
   
 end
 
-def find_the_cheese# code an argument here
+def find_the_cheese(ing_array)
+  
   # the array below is here to help
   cheese_types = ["cheddar", "gouda", "camembert"]
+  chzflag = NIL
+  ing_array.each { |ing| if ing.include? 
 end
