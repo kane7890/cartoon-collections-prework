@@ -24,10 +24,15 @@ def find_the_cheese(ing_array)
   # the array below is here to help
   cheese_types = ["cheddar", "gouda", "camembert"]
   chzflag = false
+  chz = NIL
   ing_array.each { |ing| 
-    if (cheese_types.include?(ing) && chzflag == NIL)
-      chzflag = ing 
-      puts "ING = #{ing}"
+    if (cheese_types.include?(ing) && chzflag == false)
+      chz = ing 
+#      puts "ING = #{ing}"
     end }
-    return (chzflag)
+    if chzflag == true
+      return (chz)
+    else
+      return (NIL)
+    end
 end
